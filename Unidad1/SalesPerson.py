@@ -24,14 +24,11 @@ class SalesPerson:
 alumnos = []
 
 for i in range(1, 12):
-    edad = random.randint(18, 65)
-    alumno = SalesPerson(f"Alumno {i}", edad)
-    alumnos.append(alumno)
+    alumnos.append(SalesPerson(f"Alumno {i}", random.randint(18, 65)))
 
 print("\n--- REGISTRO DE VENTAS ---")
 for alumno in alumnos:
-    venta = random.randint(1000, 5000)
-    alumno.make_sale(venta)
+    alumno.make_sale(random.randint(1000, 5000))
 
 print("\n--- INFORME DE VENDEDORES ---")
 for alumno in alumnos:
