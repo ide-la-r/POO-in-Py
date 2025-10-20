@@ -1,4 +1,4 @@
-from Curso import Curso
+from POO.Unidad1.ClassCurso.Curso import Curso
 
 class VideoCourse(Curso):
     def __init__(self, titulo, instructor, precio, clases, length_video):
